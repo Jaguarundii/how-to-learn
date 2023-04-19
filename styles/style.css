@@ -1,11 +1,23 @@
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
 .header {
   height: 100vh;
+  margin: 0;
+  padding: 0;
   min-height: 600px;
   max-height: 756px;
   display: flex;
   position: relative;
   background-color: #f2f2f2;
-  
   /* выше установили ограничения для секции */
 }
 
@@ -13,7 +25,6 @@
 
 
 /* и элемента с модификатором вида ключ-значение */
-
 
 .header__title {
   max-width: 730px;
@@ -36,6 +47,7 @@
   position: absolute;
   top: 30px;
   left: 64px;
+  z-index: 5;
 }
 
 .header__subtitle {
@@ -48,7 +60,8 @@
   font-size: 18px;
   font-weight: normal;
 }
-.header__link{
+
+.header__link {
   color: #2f80ed;
 }
 
@@ -59,7 +72,7 @@
   z-index: 2;
   right: 0;
   bottom: 0;
-  
+
 
 }
 
@@ -69,7 +82,7 @@
   height: 568px;
   position: absolute;
   top: 64px;
-  z-index: 1;
+  z-index: 0;
   right: 0;
 }
 
@@ -109,7 +122,7 @@
   font-weight: normal;
   line-height: 34px;
   margin: 0;
-  
+
 }
 
 
@@ -165,7 +178,7 @@
   margin: 0;
   align-self: start;
   flex-wrap: wrap;
-  
+
 }
 
 .table__heading {
@@ -177,7 +190,7 @@
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
-  
+
 }
 
 .table__text {
@@ -210,7 +223,7 @@
   font-size: 120px;
   font-weight: 600;
   width: 648px;
- 
+
   text-align: center;
   margin: 0;
   position: relative;
@@ -242,7 +255,7 @@
   margin: 0;
   left: 0;
   bottom: 0;
-  
+
 }
 
 .kaufman {
@@ -254,19 +267,18 @@
   align-items: center;
   flex-direction: column;
   display: block;
-  box-sizing: 877px 877px;
   z-index: -1;
- 
+  background-image: url("../images/kaufman-triangle.svg");
 }
 
 .kaufman__triangle {
   z-index: -1;
-  background-image: url("../images/kaufman-triangle.svg");
-  background-size: cover;
+  background-size: 877px 877px;
   position: absolute;
   top: 0;
   right: -210px;
 }
+
 
 .section-title__theme_dark {
   color: #fff;
@@ -289,7 +301,7 @@
   text-align: center;
 }
 
-.table__theme_dark {
+.table-theme_dark {
   margin-top: 80px;
   width: 1100px;
   display: grid;
@@ -335,7 +347,7 @@
 }
 
 .footer__column-heading {
-  color:#fff;
+  color: #fff;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
@@ -355,7 +367,7 @@
 }
 
 .footer__column-links {
-  color:#fff;
+  color: #fff;
   margin-bottom: 16px;
   line-height: 30px;
   font-size: 18px;
