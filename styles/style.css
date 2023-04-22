@@ -53,7 +53,6 @@
 
 .header__subtitle {
   margin: 0;
-
   position: absolute;
   max-width: 388px;
   left: 64px;
@@ -139,9 +138,7 @@
 
 }
 
-.two-columns__paragraph:last-child {
-  margin-bottom: 0;
-}
+
 
 
 .two-columns__span-accent {
