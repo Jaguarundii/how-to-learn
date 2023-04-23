@@ -340,6 +340,7 @@
   display: grid;
   grid-template-columns: 200px 200px 200px 200px 200px;
   row-gap: 80px;
+  margin-bottom: 0;
 }
 
 .table__cell_theme_dark {
