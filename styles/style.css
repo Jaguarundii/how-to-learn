@@ -344,7 +344,7 @@
 
 .table__cell_theme_dark {
   display: block;
-  margin-top: 80px;
+  margin-top: 0;
   width: 200px;
   color: white;
   margin-right: 0;
@@ -374,6 +374,7 @@
   margin: 0;
   color: #fff;
   margin-bottom: 18px;
+  margin-top: 18px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -388,13 +389,13 @@
   margin-top: 0;
 }
 
-.footer__column_content-info {
+.footer__column_content_info {
   display: flex;
   flex-direction: column;
 
 }
 
-.footer__column_content-social {
+.footer__column_content_social {
   display: flex;
   flex-direction: column;
 
