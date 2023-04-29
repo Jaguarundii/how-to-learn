@@ -89,9 +89,10 @@
   z-index: 0;
   right: 0;
 }
-.rotation{
+
+.rotation {
   animation: rotation 20s linear infinite;
-  }
+}
 
 
 .description {
@@ -454,6 +455,7 @@
 }
 
 .kaufman__triangle {
+  animation: rotation  20s linear infinite;
   background-image: url("../images/kaufman-triangle.svg");
   background-position: center;
   background-size: cover;
@@ -532,6 +534,7 @@
 
 .resources {
   margin-top: 100px;
+
   text-align: center;
 }
 
@@ -541,6 +544,8 @@
   margin: 0 auto;
   margin-top: 80px;
   margin-bottom: 217px;
+  text-align: center;
+  
 
 }
 
