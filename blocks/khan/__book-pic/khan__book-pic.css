@@ -4,4 +4,6 @@
     background-position: top center;
     border-style: none;
     margin-right: 48px;
+    object-position: top;
+    object-fit: cover;
   }
